@@ -10,11 +10,24 @@
 
     // @ngInject
     function configRoutes($stateProvider, $urlRouterProvider) {
+        // @ngInject
+        function resolveImages(Images) {
+            
+        }
+
         $stateProvider
             .state('home', {
                 url: '/',
                 templateUrl: 'app/views/home.tpl.html',
-                controller: 'HomeViewCtrl as vm'
+                controller: 'HomeViewCtrl as vm',
+                resolve: {
+                    // images: resolveImages
+                }
+            })
+            .state('history', {
+                parent: 'home',
+                url: '/history',
+                templateUrl: 'app/views/history.tpl.html'
             });
 
         $urlRouterProvider.otherwise('/');
