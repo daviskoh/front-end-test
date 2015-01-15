@@ -7,6 +7,7 @@ module.exports = {
             tasks: [
                 'compass',
                 'jshint',
+                'test',
                 'serve'
             ]
         }

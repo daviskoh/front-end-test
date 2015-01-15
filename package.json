@@ -5,7 +5,8 @@
   "main": " ",
   "scripts": {
     "postinstall": "bower install",
-    "start": "grunt serve"
+    "start": "grunt serve",
+    "test": "grunt test"
   },
   "repository": {
     "type": "git",
