@@ -4,9 +4,7 @@ module.exports = {
     scripts: {
         files: ['<%= meta.src %>/app/*.js'],
         tasks: [
-            // TODO: uncomment running of 'test'
-            'jshint'//,
-            // 'test'
+            'test'
         ],
         options: {
             spawn: false,

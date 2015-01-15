@@ -1,14 +1,24 @@
+<!-- Nav -->
 <div>
     Nav
 </div>
 
+<!-- Banner -->
 <div>
-    History
-    <img src="{{  }}" alt="">
+    Pacific Ocean
+    <img class="banner" src="{{ vm.images.bigFish }}" alt="">
 </div>
 
-<div>Whale</div>
-<div>Fish</div>
+<!-- 2 Smaller Images -->
+<div class="container">
+    <div class="square-container">
+        <img class="square-img" src="{{ vm.images.whale }}" alt="">
+    </div>
+    <div class="square-container">
+        <img class="square-img" src="{{ vm.images.smallFish }}" alt="">
+    </div>
+</div>
 
+<!-- History Section -->
 <a href="" ui-sref="history()">History</a>
 <div ui-view></div>

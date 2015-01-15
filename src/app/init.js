@@ -4,7 +4,7 @@
     /**
      * when angular is loaded, bootstraps the app
      */
-
+    
     angular.element(document).ready(function () {
         var _appName = 'pacificOcean';
 

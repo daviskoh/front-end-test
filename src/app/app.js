@@ -12,7 +12,7 @@
     function configRoutes($stateProvider, $urlRouterProvider) {
         // @ngInject
         function resolveImages(Images) {
-            
+            return Images.fetch();
         }
 
         $stateProvider
@@ -21,7 +21,7 @@
                 templateUrl: 'app/views/home.tpl.html',
                 controller: 'HomeViewCtrl as vm',
                 resolve: {
-                    // images: resolveImages
+                    resolveImages: resolveImages
                 }
             })
             .state('history', {
