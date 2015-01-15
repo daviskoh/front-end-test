@@ -1,0 +1,27 @@
+{
+    "globalstrict": true,
+    "browser": true,
+    "expr": true,
+    "devel": true,
+    "globals": {
+        "angular": true,
+        "jasmine": true,
+        "describe": true,
+        "module": true,
+        "beforeEach": true,
+        "afterEach": true,
+        "element": true,
+        "browser": true,
+        "by": true,
+        "spyOn": true,
+        "it": true,
+        "xit": true,
+        "expect": true,
+        "require": true,
+        "inject": true,
+        "karma": true,
+        "process": true
+    }
+}
+
+

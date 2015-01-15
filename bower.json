@@ -1,0 +1,17 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "homepage": "https://github.com/daviskoh/front-end-test",
+  "authors": [
+    "dkoh@amplify.com"
+  ],
+  "description": "FE test for Amplify",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

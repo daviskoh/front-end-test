@@ -1,0 +1,22 @@
+{
+  "name": "front-end-test",
+  "version": "1.0.0",
+  "description": "Amplify FE test",
+  "main": " ",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daviskoh/front-end-test.git"
+  },
+  "author": "dkoh@amplify.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daviskoh/front-end-test/issues"
+  },
+  "homepage": "https://github.com/daviskoh/front-end-test",
+  "devDependencies": {
+    "grunt": "^0.4.5"
+  }
+}
