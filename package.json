@@ -4,7 +4,8 @@
   "description": "Amplify FE test",
   "main": " ",
   "scripts": {
-    "postinstall": "bower install"
+    "postinstall": "bower install",
+    "start": "grunt serve"
   },
   "repository": {
     "type": "git",

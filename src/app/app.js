@@ -13,7 +13,8 @@
         $stateProvider
             .state('home', {
                 url: '/',
-                templateUrl: 'app/views/home.tpl.html'
+                templateUrl: 'app/views/home.tpl.html',
+                controller: 'HomeViewCtrl as vm'
             });
 
         $urlRouterProvider.otherwise('/');
