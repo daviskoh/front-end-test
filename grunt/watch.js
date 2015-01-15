@@ -13,10 +13,10 @@ module.exports = {
             livereload: true
         }
     },
+
     styles: {
         files: ['<%= meta.src %>/styles/scss/*.scss'],
-        // Wire in Compass below
-        tasks: [],
+        tasks: ['compass:dev'],
         options: {
             livereload: true
         }

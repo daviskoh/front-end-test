@@ -5,6 +5,7 @@ module.exports = {
         jshintrc: '.jshintrc'
     },
     all: {
-        src: ['<%= meta.src %>/app/*.js']
+        src: ['<%= meta.src %>/app/*.js'],
+        grunt: ['grunt/*.js']
     }
 };
