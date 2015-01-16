@@ -5,6 +5,11 @@
     </div>
 
     <div class="column wikipedia-text">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet odio temporibus amet velit eius? Provident delectus maiores, qui sint maxime sit illum, assumenda, tempora dicta ullam atque unde excepturi iure.
+        <!-- Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet odio temporibus amet velit eius? Provident delectus maiores, qui sint maxime sit illum, assumenda, tempora dicta ullam atque unde excepturi iure. -->
+        <div ng-repeat="paragraph in vm.history.content">
+            <p>
+                {{ paragraph }}
+            </p>
+        </div>
     </div>
 </div>

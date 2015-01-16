@@ -8,7 +8,7 @@
 
     /**
      * @ngdoc controller
-     * @name pacificOcean.CartViewController
+     * @name pacificOcean.HomeViewCtrl
      * @description Home controller responsible for initial state.
      *
      * @requires Images

@@ -23,11 +23,22 @@
                 resolve: {
                     resolveImages: resolveImages
                 }
-            })
+            });
+
+        // @ngInject
+        function resolveHistory(Wikipedia) {
+            return Wikipedia.fetchData();
+        }
+
+        $stateProvider
             .state('history', {
                 parent: 'home',
                 url: '/history',
-                templateUrl: 'app/views/history.tpl.html'
+                templateUrl: 'app/views/history.tpl.html',
+                controller: 'HistoryViewCtrl as vm',
+                resolve: {
+                    history: resolveHistory
+                }
             });
 
         $urlRouterProvider.otherwise('/');
