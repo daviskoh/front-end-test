@@ -10,7 +10,7 @@ module.exports = function (grunt) {
 
     grunt.registerTask('serve', 'Runs a server on localhost:3000', [
         'test',
-        'concurrent:dev',
+        'compass:dev',
         'connect:app',
         'watch'
     ]);
