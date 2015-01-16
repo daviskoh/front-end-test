@@ -1,7 +1,7 @@
 (function () {
     'use strict';
 
-    // NOTE: would have 'History', but it is protected in JS
+    // NOTE: would have named it 'History', but it is protected in JS
     angular.module('pacificOcean')
         .factory('Wikipedia', Wikipedia);
 
@@ -19,24 +19,20 @@
         /**
          * @ngdoc function
          * @methodOf pacificOcean.Wikipedia
-         * @name fetchHistory
+         * @name fetchData
          * @description Retrieves pacific ocean history from wikipedia
          *
          * @returns {Promise} $http promise with pacific ocean history data
          */
 
-        function fetchHistory() {
-            var url = [
-                'http://en.wikipedia.org',
-                'w',
-                'api.php?format=json&action=query&titles=Pacific_Ocean&prop=revisions&rvprop=content'
-            ].join('/');
+        function fetchData() {
+            var url = 'data/history.json';
 
-            return $http.jsonp(url);
+            return $http.get(url);
         }
 
         return {
-            fetchHistory: fetchHistory
+            fetchData: fetchData
         };
     }
 })();

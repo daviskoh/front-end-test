@@ -15,7 +15,7 @@ describe('Wikipedia', function () {
         expect(Wikipedia).toBeDefined();
     });
 
-    describe('Wikipedia.fetchHistory', function () {
+    describe('Wikipedia.fetchData', function () {
         afterEach(function () {
             $httpBackend.flush();
             $httpBackend.verifyNoOutstandingExpectation();
@@ -23,15 +23,11 @@ describe('Wikipedia', function () {
         });
 
         it('should make a GET to wikipedia', function () {
-            var url = [
-                'http://en.wikipedia.org',
-                'w',
-                'api.php?format=json&action=query&titles=Pacific_Ocean&prop=revisions&rvprop=content'
-            ].join('/');
+            var url = 'data/history.json';
 
-            $httpBackend.expectJSONP(url).respond('');
+            $httpBackend.expectGET(url).respond('');
 
-            Wikipedia.fetchHistory();
+            Wikipedia.fetchData();
         });
     });
 });

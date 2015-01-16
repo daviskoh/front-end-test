@@ -15,3 +15,14 @@ https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=Pacific%20ocean%
 6.  Use Angular as much as possible rather than jQuery to access the DOM
 
 7.  Follow JS, CSS and HTML best practices
+
+
+<!--
+
+    TODO: see list below
+    - installation / setup
+    - starting server
+    - testing
+    - next steps
+
+ -->
