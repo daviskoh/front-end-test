@@ -47,7 +47,7 @@
         /* container positioning */
         width: 40%;
         float: left;
-        margin: 5% 5%;
+        margin: 5%;
         display: inline-block;
         
         /* inner content positioning */
@@ -70,10 +70,10 @@
 
     /* footer */
     & .footer {
+        @include basic-link;
+
         display: block;
         background-color: black;
-        color: $primary-font-color;
-        text-decoration: none;
         margin: 0% 5% 5% 5%;
         padding: 2%;
         padding-bottom: 0px;

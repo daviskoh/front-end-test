@@ -1,0 +1,34 @@
+.history-container {
+    // cover the screen
+    position:fixed;
+    height: 100%;
+    width: 100%;
+    padding:0;
+    margin:0;
+    z-index: 1000;
+    background-color: $primary-color;
+
+    top: 0px;
+
+    & a {
+        float: right;
+    }
+}
+
+// abstract & add to common
+.column {
+    max-width: 90%;
+    margin: 5%;
+}
+
+.close-history {
+    @include basic-link;
+    color: black;
+}
+
+// TODO: make font size responsive
+.wikipedia-text {
+    background-color: $primary-font-color;
+    height: 50%;
+    padding: 5%;
+}
