@@ -5,6 +5,8 @@ module.exports = function (grunt) {
 
     grunt.registerTask('test', 'Run unit tests', [
         'jshint',
+        // needed for directive unit testing
+        'concurrent:test',
         'karma:unit'
     ]);
 
