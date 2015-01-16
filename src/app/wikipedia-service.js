@@ -15,6 +15,7 @@
     
     // @ngInject
     function Wikipedia($http) {
+        var _history = {};
 
         /**
          * @ngdoc function
@@ -28,11 +29,31 @@
         function fetchData() {
             var url = 'data/history.json';
 
-            return $http.get(url);
+            return $http
+                .get(url)
+                .success(function (resp) {
+                    if (resp) _history = resp;
+
+                    return resp;
+                });
+        }
+
+        /**
+         * @ngdoc function
+         * @methodOf pacificOcean.Wikipedia
+         * @name getHistory
+         * @description Returns a copy of locally stored history from a Wikipedia.fetchData call
+         *
+         * @returns {Object} Retrieves the title and specific content of the Pacific Ocean page
+         */
+
+        function getHistory() {
+            return angular.copy(_history);
         }
 
         return {
-            fetchData: fetchData
+            fetchData: fetchData,
+            getHistory: getHistory
         };
     }
 })();
