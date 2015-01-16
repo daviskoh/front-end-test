@@ -19,10 +19,10 @@ module.exports = {
             livereload: true
         }
     },
+
     configFiles: {
         files: [
             'Gruntfile.js',
-            // For when karma.conf.js is setup
             'config/*.js'
         ],
         tasks: [

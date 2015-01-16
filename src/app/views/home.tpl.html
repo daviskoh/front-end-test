@@ -1,24 +1,27 @@
-<!-- Nav -->
-<div>
-    Nav
-</div>
+<!-- nav -->
 
-<!-- Banner -->
-<div>
-    Pacific Ocean
-    <img class="banner" src="{{ vm.images.bigFish }}" alt="">
-</div>
-
-<!-- 2 Smaller Images -->
-<div class="container">
-    <div class="square-container">
-        <img class="square-img" src="{{ vm.images.whale }}" alt="">
-    </div>
-    <div class="square-container">
-        <img class="square-img" src="{{ vm.images.smallFish }}" alt="">
+<!-- top half -->
+<div class="top">
+    <p class="pacific-ocean-title">
+        Pacific Ocean
+    </p>
+    <div class="viper-fish-container">
+        <img class="viper-fish-img" src="{{ vm.images.bigFish }}"></img>
     </div>
 </div>
 
-<!-- History Section -->
-<a href="" ui-sref="history()">History</a>
+<!-- bottom half -->
+<div class="bottom">
+    <div class="square-image-container">
+        <img class="square-image" src="{{ vm.images.whale }}" />
+    </div>
+    <div class="square-image-container">
+        <img class="square-image" src="{{ vm.images.smallFish }}" />
+    </div>
+
+    <!-- history footer -->
+    <a class="footer" href="" ui-sref="history()">
+        History
+    </a>
+</div>
 <div ui-view></div>
