@@ -1,31 +1,35 @@
 <!-- nav -->
 <navigation>
-    hsldkfj
+    <a href="" class="nav-link">Sea Otters</a>
+    <a href="" class="nav-link">Killer Whales</a>
+    <a href="" class="nav-link">Viper Fish</a>
 </navigation>
 
-<!-- top half -->
-<div class="top">
-    <p class="pacific-ocean-title">
-        Pacific Ocean
-    </p>
-    <div class="viper-fish-container">
-        <img class="viper-fish-img" src="{{ vm.images.bigFish }}"></img>
+<div class="content">
+    <!-- top half -->
+    <div class="top">
+        <p class="pacific-ocean-title">
+            Pacific Ocean
+        </p>
+        <div class="viper-fish-container">
+            <img class="viper-fish-img" src="{{ vm.images.bigFish }}"></img>
+        </div>
     </div>
+
+    <!-- bottom half -->
+    <div class="bottom">
+        <div class="square-image-container">
+            <img class="square-image" src="{{ vm.images.whale }}" />
+        </div>
+        <div class="square-image-container">
+            <img class="square-image" src="{{ vm.images.smallFish }}" />
+        </div>
+
+        <!-- history footer -->
+        <a class="footer" href="" ui-sref="history()">
+            History
+        </a>
+    </div>
+
+    <div ui-view></div>
 </div>
-
-<!-- bottom half -->
-<div class="bottom">
-    <div class="square-image-container">
-        <img class="square-image" src="{{ vm.images.whale }}" />
-    </div>
-    <div class="square-image-container">
-        <img class="square-image" src="{{ vm.images.smallFish }}" />
-    </div>
-
-    <!-- history footer -->
-    <a class="footer" href="" ui-sref="history()">
-        History
-    </a>
-</div>
-
-<div ui-view></div>

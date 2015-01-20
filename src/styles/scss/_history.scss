@@ -23,7 +23,7 @@
 
 .close-history {
     @include basic-link;
-    color: black;
+    color: $secondary-color;
 }
 
 // TODO: make font size responsive

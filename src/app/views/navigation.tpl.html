@@ -1,3 +1,16 @@
 <div>
-    <ng-transclude></ng-transclude>
+    <!-- Left Bar -->
+    <div class="left-bar" ng-show="show">
+        <ng-transclude></ng-transclude>
+    </div>
+
+    <!-- Menu Bar -->
+    <div class="navigation">
+        <!-- Menu Icon -->
+        <a href="" class="menu-icon" ng-click="toggleNav()">
+            <div class="bar"></div>
+            <div class="bar"></div>
+            <div class="bar"></div>
+        </a>
+    </div>
 </div>

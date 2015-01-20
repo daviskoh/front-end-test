@@ -29,16 +29,21 @@ describe('Nav', function () {
         // expect element to exist
         expect(element).toBeDefined();
 
-        expect(element.find('ng-transclude').length).toBe(1);
+        // check for icon
+        expect(element.find('div').length).toBe(5);
     });
 
-    it('should transclude element written within its scope', function () {
+    it('should show transcluded links on open', function () {
         var navStart = '<navigation>',
             navEnd = '</navigation>',
             link = '<a></a>';
 
         element = compileHTML(navStart + link + link + link + navEnd);
 
-        expect(element.find('a').length).toBe(3);
+        expect(element.find('ng-transclude').find('a').length).toBe(3);
+    });
+
+    describe('Nav.toggleNav', function () {
+        
     });
 });
