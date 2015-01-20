@@ -12,6 +12,14 @@ module.exports = {
         }
     },
 
+    src: {
+        files: ['<%= meta.src %>/app/views/*.html', '<%= meta.src %>/index.html'],
+        tasks: ['html2js'],
+        options: {
+            livereload: true
+        }
+    },
+
     styles: {
         files: ['<%= meta.src %>/styles/scss/*.scss'],
         tasks: ['compass:dev'],
