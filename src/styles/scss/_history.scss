@@ -10,8 +10,14 @@
 
     top: 0px;
 
+    font-size: 1.5em;
+
     & a {
         float: right;
+    }
+
+    & .wiki-text {
+        font-size: 0.7em;
     }
 }
 
