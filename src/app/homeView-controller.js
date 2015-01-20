@@ -8,7 +8,7 @@
 
     /**
      * @ngdoc controller
-     * @name pacificOcean.HomeViewCtrl
+     * @name pacificOcean.controllers:HomeViewCtrl
      * @description Home controller responsible for initial state.
      *
      * @requires Images

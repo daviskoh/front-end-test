@@ -16,6 +16,13 @@ module.exports = function (grunt) {
                 base: '<%= meta.src %>',
                 middleware: middleware
             }
+        },
+
+        docs: {
+            options: {
+                port: 4000,
+                base: 'docs'
+            }
         }
     };
 };

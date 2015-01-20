@@ -1,28 +1,60 @@
-1.  Set up Angular App and grunt to process compass and jshint.
-	- use express.js or another node server
+# Front End Test
+===================================
 
-2.  Store the App on a GitHub repo.
+Front end test for Amplify
 
-3.  Refer to design layouts, and build hamburger navigation (as Angular directive), page layout, and secondary HTML load when History is clicked
+###Installation
 
-4.  Use JSON calls to load pics and content (see additional JSON in txt files)
-	http://en.wikipedia.org/w/api.php?format=json&action=query&titles=Pacific_Ocean&prop=revisions&rvprop=content
+1.) Clone the repo:
 
-https://ajax.googleapis.com/ajax/services/search/images?v=1.0&q=Pacific%20ocean%20organisms+&rsz=8&&start=6
+```
+$ git clone git@github.com:daviskoh/front-end-test.git
+```
 
-5.  Use Compass and SCSS for your styles
+2.) Install global dependencies:
 
-6.  Use Angular as much as possible rather than jQuery to access the DOM
+```
+$ npm install -g bower
+$ npm install -g grunt
+```
 
-7.  Follow JS, CSS and HTML best practices
+3.) `cd` into the repo, then:
 
+```
+$ npm install
+$ npm start || grunt serve
+```
 
-<!--
+open **http://localhost:3000**
 
-    TODO: see list below
-    - installation / setup
-    - starting server
-    - testing
-    - next steps
+### Code Documentation
 
- -->
+[ngdocs](https://github.com/idanush/ngdocs) is used
+
+To compile ngDocs & start server, run:
+
+```
+$ grunt docs
+```
+
+and open **http://localhost:4000**
+
+### Unit Tests
+
+Tests are written with Karma + Jasmine. The configs are located in the file `karma.conf.js`.
+
+```
+$ npm test || grunt test
+```
+
+Test specs sit alongside associated component files in the /src/app folder. Spec filenames should mirror the file they are testing, but with the extension `.spec.js`.
+
+Ex:
+
+```
+app/feature/feature-controller.js
+app/feature/feature-controller.spec.js
+app/feature/stuff-service.js
+app/feature/stuff-service.spec.js
+```
+

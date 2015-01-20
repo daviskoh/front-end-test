@@ -6,7 +6,10 @@
 
     /**
      * @ngdoc directive
-     * @name pacificOcean.navigation
+     * @name pacificOcean.directives:navigation
+     * @restrict E
+     * @element <a></a>
+     * @scope
      * @description Navigation bar as directive
      * should transclude (include within its scope) any elements defined within its markup
      *
@@ -28,7 +31,7 @@
 
                 /**
                  * @ngdoc function
-                 * @methodOf pacificOcean.navigation
+                 * @methodOf pacificOcean.directives:navigation
                  * @name toggleNav
                  * @description Shows / hides left menu bar & adjusts content width accordingly
                  *

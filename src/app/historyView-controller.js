@@ -6,7 +6,7 @@
 
     /**
      * @ngdoc controller
-     * @name pacificOcean.HistoryViewCtrl
+     * @name pacificOcean.controllers:HistoryViewCtrl
      * @description Controller responsible for history info popup.
      *
      * @requires Wikipedia

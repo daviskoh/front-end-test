@@ -17,6 +17,12 @@ module.exports = function (grunt) {
         'watch'
     ]);
 
+    grunt.registerTask('docs', 'Runs ngDocs server on localhost:4000', [
+        'ngdocs',
+        'connect:docs',
+        'watch'
+    ]);
+
     // running grunt without specifying any task will show list of tasks available
     grunt.registerTask('default', ['availabletasks']);
 };
