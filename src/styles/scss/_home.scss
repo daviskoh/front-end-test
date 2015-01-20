@@ -11,6 +11,12 @@
     float: right;
 }
 
+.content-shifted {
+    margin-left: 20%;
+    margin-top: 65px;
+    position: absolute;
+}
+
 /* top half */
 .top {
     @include half;

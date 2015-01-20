@@ -21,7 +21,8 @@
             transclude: true,
             templateUrl: 'app/views/navigation.tpl.html',
             link: function (scope, element, attrs) {
-                var content = angular.element(document.querySelector('.content'));
+                var body = angular.element(document.body),
+                    content = angular.element(document.querySelector('.content'));
 
                 scope.show = false;
 
@@ -38,11 +39,13 @@
 
                     // shift content & navigation bar
                     if (scope.show) {
-                        content.css('width', '80%');
+                        body.css('overflow', 'hidden');
+                        content.addClass('content-shifted');
                         return;
                     }
 
-                    content.css('width', '100%');
+                    body.css('overflow', '');
+                    content.removeClass('content-shifted');
                 };
             }
         };

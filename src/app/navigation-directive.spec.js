@@ -54,11 +54,11 @@ describe('Nav', function () {
 
             toggleNav();
 
-            expect(angular.element(document.querySelector('.content')).css('width')).toBe('80%');
+            expect(angular.element(document.querySelector('.content')).hasClass('content-shifted')).toBe(true);
 
             toggleNav();
 
-            expect(angular.element(document.querySelector('.content')).css('width')).toBe('100%');
+            expect(angular.element(document.querySelector('.content')).hasClass('content-shifted')).toBe(false);
         });
     });
 });

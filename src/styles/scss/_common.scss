@@ -1,10 +1,12 @@
 // consider throwing into common.scss
 $primary-color: rgb(227,236,243);
 $primary-font-color: white;
-$secondary-color: black;
+$secondary-color: rgb(39, 39, 39);
 
 html, body {
     height: 100%;
+    width: 100%;
+    margin: 0;
 }
 
 @mixin basic-link {
