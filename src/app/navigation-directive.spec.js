@@ -44,6 +44,21 @@ describe('Nav', function () {
     });
 
     describe('Nav.toggleNav', function () {
-        
+        it('should toggle content section width between 100% & 80%', function () {
+            // add content element to document body
+            angular.element(document.body).append('<div class="content"></div>');
+
+            element = compileHTML('<navigation></navigation>');
+
+            var toggleNav = element.scope().toggleNav;
+
+            toggleNav();
+
+            expect(angular.element(document.querySelector('.content')).css('width')).toBe('80%');
+
+            toggleNav();
+
+            expect(angular.element(document.querySelector('.content')).css('width')).toBe('100%');
+        });
     });
 });
