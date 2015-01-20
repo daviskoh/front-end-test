@@ -18,17 +18,21 @@
 
     <!-- bottom half -->
     <div class="bottom">
-        <div class="square-image-container">
-            <img class="square-image" src="{{ vm.images.whale }}" />
-        </div>
-        <div class="square-image-container">
-            <img class="square-image" src="{{ vm.images.smallFish }}" />
-        </div>
+        <div class="bottom-container">
+            <div class="square-image-container square-image-container-left">
+                <img class="square-image" src="{{ vm.images.whale }}" />
+            </div>
+            <div class="square-image-container square-image-container-right">
+                <img class="square-image" src="{{ vm.images.smallFish }}" />
+            </div>
 
-        <!-- history footer -->
-        <a class="footer" href="" ui-sref="history()">
-            History
-        </a>
+            <!-- history footer -->
+            <a class="footer" href="" ui-sref="history()">
+                <div class="history">
+                    History
+                </div>
+            </a>
+        </div>
     </div>
 
     <div ui-view></div>
